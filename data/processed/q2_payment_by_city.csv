@@ -1,0 +1,121 @@
+city,payment_method,total_transaksi,total_revenue,pct_per_kota
+Bandung,Transfer Bca,27,4764750.0,12.05
+Bandung,Transfer Mandiri,24,5589540.0,10.71
+Bandung,Cod,24,5312780.0,10.71
+Bandung,Shopeepay,22,3408485.0,9.82
+Bandung,Dana,20,3603175.0,8.93
+Bandung,Gopay,18,3556490.0,8.04
+Bandung,Transfer Bri,18,4910105.0,8.04
+Bandung,Qris,17,2649370.0,7.59
+Bandung,Ovo,16,2943650.0,7.14
+Bandung,Alfamart,15,2323130.0,6.7
+Bandung,Indomaret,14,1936845.0,6.25
+Bandung,Linkaja,9,1067050.0,4.02
+Bogor,Indomaret,34,5306555.0,11.07
+Bogor,Shopeepay,31,5592440.0,10.1
+Bogor,Gopay,30,5335115.0,9.77
+Bogor,Dana,28,5746980.0,9.12
+Bogor,Transfer Bri,27,7675315.0,8.79
+Bogor,Ovo,25,5073895.0,8.14
+Bogor,Linkaja,24,3691980.0,7.82
+Bogor,Alfamart,24,5744750.0,7.82
+Bogor,Transfer Bca,23,4270290.0,7.49
+Bogor,Transfer Mandiri,22,4348965.0,7.17
+Bogor,Qris,21,9128700.0,6.84
+Bogor,Cod,18,5110785.0,5.86
+Depok,Dana,52,8903240.0,11.26
+Depok,Cod,51,12133525.0,11.04
+Depok,Gopay,44,8479850.0,9.52
+Depok,Alfamart,40,7405555.0,8.66
+Depok,Linkaja,39,7597755.0,8.44
+Depok,Transfer Bca,39,6435030.0,8.44
+Depok,Indomaret,38,6758810.0,8.23
+Depok,Transfer Bri,36,6978985.0,7.79
+Depok,Shopeepay,32,6649590.0,6.93
+Depok,Transfer Mandiri,32,6322155.0,6.93
+Depok,Qris,32,6036845.0,6.93
+Depok,Ovo,27,5590715.0,5.84
+Jakarta,Shopeepay,17,5294515.0,11.56
+Jakarta,Indomaret,15,1978645.0,10.2
+Jakarta,Alfamart,15,1587195.0,10.2
+Jakarta,Cod,14,2890680.0,9.52
+Jakarta,Qris,12,3021410.0,8.16
+Jakarta,Dana,12,4054115.0,8.16
+Jakarta,Transfer Bri,11,2665220.0,7.48
+Jakarta,Transfer Mandiri,11,2399670.0,7.48
+Jakarta,Gopay,10,3349185.0,6.8
+Jakarta,Linkaja,10,1547945.0,6.8
+Jakarta,Transfer Bca,10,1677705.0,6.8
+Jakarta,Ovo,10,2186405.0,6.8
+Makassar,Linkaja,23,3630005.0,12.37
+Makassar,Alfamart,20,3431170.0,10.75
+Makassar,Ovo,18,4734670.0,9.68
+Makassar,Transfer Mandiri,16,2996610.0,8.6
+Makassar,Qris,16,2937170.0,8.6
+Makassar,Indomaret,15,3641225.0,8.06
+Makassar,Transfer Bca,15,1649455.0,8.06
+Makassar,Gopay,14,2334710.0,7.53
+Makassar,Dana,14,3581730.0,7.53
+Makassar,Cod,13,2672675.0,6.99
+Makassar,Shopeepay,13,1944830.0,6.99
+Makassar,Transfer Bri,9,1213305.0,4.84
+Medan,Linkaja,32,8094590.0,10.96
+Medan,Indomaret,29,7136470.0,9.93
+Medan,Ovo,27,7020885.0,9.25
+Medan,Dana,27,6684635.0,9.25
+Medan,Transfer Bri,25,4602900.0,8.56
+Medan,Shopeepay,25,5227995.0,8.56
+Medan,Qris,24,5408940.0,8.22
+Medan,Gopay,22,5231790.0,7.53
+Medan,Alfamart,22,3270040.0,7.53
+Medan,Transfer Mandiri,21,3327590.0,7.19
+Medan,Cod,21,4031985.0,7.19
+Medan,Transfer Bca,17,3004565.0,5.82
+Palembang,Qris,31,4549410.0,11.27
+Palembang,Alfamart,29,6034890.0,10.55
+Palembang,Indomaret,28,5360815.0,10.18
+Palembang,Linkaja,27,4392075.0,9.82
+Palembang,Cod,25,5249490.0,9.09
+Palembang,Transfer Mandiri,24,5126160.0,8.73
+Palembang,Dana,24,3962140.0,8.73
+Palembang,Gopay,21,4157235.0,7.64
+Palembang,Ovo,20,4246395.0,7.27
+Palembang,Transfer Bri,20,4786465.0,7.27
+Palembang,Shopeepay,15,3591610.0,5.45
+Palembang,Transfer Bca,11,1321005.0,4.0
+Semarang,Qris,12,2671125.0,10.62
+Semarang,Linkaja,11,3235025.0,9.73
+Semarang,Cod,11,3756250.0,9.73
+Semarang,Gopay,11,2725790.0,9.73
+Semarang,Transfer Bri,11,1394825.0,9.73
+Semarang,Transfer Bca,10,1406705.0,8.85
+Semarang,Ovo,9,2846940.0,7.96
+Semarang,Dana,9,1911650.0,7.96
+Semarang,Indomaret,8,3479245.0,7.08
+Semarang,Transfer Mandiri,7,1318020.0,6.19
+Semarang,Alfamart,7,914360.0,6.19
+Semarang,Shopeepay,7,2129125.0,6.19
+Surabaya,Transfer Bca,34,5565210.0,10.53
+Surabaya,Alfamart,32,8969035.0,9.91
+Surabaya,Indomaret,32,6898605.0,9.91
+Surabaya,Qris,30,6571175.0,9.29
+Surabaya,Ovo,28,4458210.0,8.67
+Surabaya,Linkaja,28,6570140.0,8.67
+Surabaya,Gopay,27,6573095.0,8.36
+Surabaya,Shopeepay,26,3446510.0,8.05
+Surabaya,Cod,23,5067410.0,7.12
+Surabaya,Dana,22,4043215.0,6.81
+Surabaya,Transfer Mandiri,21,3022060.0,6.5
+Surabaya,Transfer Bri,20,3960350.0,6.19
+Tangerang,Linkaja,24,5407625.0,10.26
+Tangerang,Cod,23,4534540.0,9.83
+Tangerang,Shopeepay,23,3622405.0,9.83
+Tangerang,Alfamart,22,4742445.0,9.4
+Tangerang,Qris,22,4288255.0,9.4
+Tangerang,Gopay,21,5825055.0,8.97
+Tangerang,Transfer Mandiri,20,3512765.0,8.55
+Tangerang,Ovo,17,3586380.0,7.26
+Tangerang,Transfer Bri,16,4229915.0,6.84
+Tangerang,Transfer Bca,16,3616305.0,6.84
+Tangerang,Dana,15,3251005.0,6.41
+Tangerang,Indomaret,15,3909295.0,6.41

@@ -1,0 +1,21 @@
+store_id,store_name,city,store_type,total_order,total_revenue,avg_order_value,unique_customer,last_order_date,revenue_quartile
+STR041,Toko Makmur Semarang,Semarang,Online,57,18205930.0,319402.0,55,2024-12-20,4
+STR007,Toko Sejahtera Bogor,Bogor,Online,80,15701845.0,196273.0,76,2024-12-30,4
+STR005,Toko Berkah Medan,Medan,Hybrid,63,15380280.0,244131.0,58,2024-12-14,4
+STR050,Toko Makmur Medan,Medan,Online,51,14995290.0,294025.0,48,2024-12-23,4
+STR042,Toko Maju Bogor,Bogor,Online,50,14414400.0,288288.0,48,2024-12-24,4
+STR048,Toko Makmur Surabaya,Surabaya,Online,58,14412250.0,248487.0,56,2024-12-27,4
+STR015,Toko Makmur Jakarta,Jakarta,Offline,54,14263180.0,264133.0,54,2024-12-26,4
+STR011,Toko Sejahtera Bogor,Bogor,Online,51,14195230.0,278338.0,50,2024-12-31,4
+STR035,Toko Sejahtera Surabaya,Surabaya,Offline,64,13455780.0,210247.0,61,2024-12-21,4
+STR037,Toko Jaya Depok,Depok,Hybrid,57,13342020.0,234071.0,55,2024-11-03,4
+STR038,Toko Makmur Semarang,Semarang,Online,63,12873810.0,204346.0,62,2024-12-31,4
+STR026,Toko Sejahtera Bandung,Bandung,Online,66,12814475.0,194159.0,62,2024-12-12,4
+STR009,Toko Nusantara Medan,Medan,Online,61,12790245.0,209676.0,59,2024-12-16,3
+STR010,Toko Maju Palembang,Palembang,Offline,61,12689410.0,208023.0,59,2024-11-20,3
+STR003,Toko Maju Depok,Depok,Hybrid,56,12645800.0,225818.0,55,2024-12-27,3
+STR006,Toko Barokah Depok,Depok,Online,59,12159410.0,206092.0,59,2024-12-30,3
+STR020,Toko Mandiri Bandung,Bandung,Offline,54,11689940.0,216480.0,51,2024-12-02,3
+STR027,Toko Sejahtera Depok,Depok,Hybrid,66,11658260.0,176640.0,65,2024-12-27,3
+STR017,Toko Nusantara Tangerang,Tangerang,Online,49,11538465.0,235479.0,49,2024-12-19,3
+STR034,Toko Sejahtera Depok,Depok,Hybrid,55,11457540.0,208319.0,53,2024-12-24,3

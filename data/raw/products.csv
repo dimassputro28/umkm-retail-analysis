@@ -1,0 +1,57 @@
+product_id,product_name,category,base_price,stock,supplier_city
+PRD0001,Batik Tulis Premium,Fashion & Pakaian,300433,127,Surabaya
+PRD0002,Kaos Polos Cotton Combed,Fashion & Pakaian,47058,450,Makassar
+PRD0003,Hijab Voal Motif,Fashion & Pakaian,59643,273,Medan
+PRD0004,Celana Chino Pria,Fashion & Pakaian,156500,352,Tangerang
+PRD0005,Dress Casual Wanita,Fashion & Pakaian,163080,286,Bandung
+PRD0006,Jaket Bomber,Fashion & Pakaian,289811,488,Bogor
+PRD0007,Sepatu Sneakers Lokal,Fashion & Pakaian,260525,252,Medan
+PRD0008,Sandal Kulit Handmade,Fashion & Pakaian,146420,252,Palembang
+PRD0009,Keripik Tempe Renceng,Makanan & Minuman,13559,58,Surabaya
+PRD0010,Sambal Bawang Homemade,Makanan & Minuman,32796,230,Makassar
+PRD0011,Kopi Arabika Toraja 250gr,Makanan & Minuman,78879,220,Tangerang
+PRD0012,Teh Herbal Jahe Merah,Makanan & Minuman,39945,37,Surabaya
+PRD0013,Snack Box Mix,Makanan & Minuman,46986,216,Makassar
+PRD0014,Madu Hutan Asli 500ml,Makanan & Minuman,167467,451,Surabaya
+PRD0015,Dodol Garut Premium,Makanan & Minuman,43147,108,Medan
+PRD0016,Rendang Kemasan Vacuum,Makanan & Minuman,120146,239,Bandung
+PRD0017,Skincare Serum Vit C Lokal,Kecantikan & Perawatan,102648,103,Semarang
+PRD0018,Masker Wajah Clay BPOM,Kecantikan & Perawatan,50159,137,Surabaya
+PRD0019,Sabun Sirih Herbal,Kecantikan & Perawatan,25260,423,Depok
+PRD0020,Lip Cream Matte Halal,Kecantikan & Perawatan,45208,35,Depok
+PRD0021,Sunscreen SPF50 Lokal,Kecantikan & Perawatan,85967,57,Medan
+PRD0022,Body Lotion Bengkoang,Kecantikan & Perawatan,50449,218,Tangerang
+PRD0023,Shampo Kemiri Organik,Kecantikan & Perawatan,70773,119,Palembang
+PRD0024,Parfum Roll-On Halal,Kecantikan & Perawatan,39921,94,Palembang
+PRD0025,Powerbank 10000mAh,Elektronik & Aksesori,125282,209,Semarang
+PRD0026,Kabel Data Type-C 1m,Elektronik & Aksesori,39909,156,Palembang
+PRD0027,Earphone Bluetooth TWS,Elektronik & Aksesori,140651,500,Depok
+PRD0028,Holder HP Mobil,Elektronik & Aksesori,56688,377,Tangerang
+PRD0029,Lampu LED Ring Light,Elektronik & Aksesori,165289,107,Semarang
+PRD0030,Mouse Wireless USB,Elektronik & Aksesori,89267,39,Bogor
+PRD0031,Casing HP Anti Crack,Elektronik & Aksesori,29997,392,Makassar
+PRD0032,Charger Fast Charging,Elektronik & Aksesori,68746,35,Bogor
+PRD0033,Tempat Makan Tupperware KW,Rumah Tangga,50623,267,Depok
+PRD0034,Sapu Lantai Ijuk,Rumah Tangga,24579,39,Depok
+PRD0035,Lap Microfiber Set 3pcs,Rumah Tangga,30625,445,Bandung
+PRD0036,Gantungan Baju Kayu,Rumah Tangga,19122,314,Surabaya
+PRD0037,Botol Minum Tumbler,Rumah Tangga,80414,216,Surabaya
+PRD0038,Talenan Kayu Jati,Rumah Tangga,84172,301,Medan
+PRD0039,Keranjang Rotan Mini,Rumah Tangga,112940,314,Jakarta
+PRD0040,Lilin Aromaterapi,Rumah Tangga,62295,51,Palembang
+PRD0041,Baju Bayi Newborn Set,Perlengkapan Bayi & Anak,128081,308,Bogor
+PRD0042,Mainan Edukasi Kayu,Perlengkapan Bayi & Anak,75733,488,Semarang
+PRD0043,Tas Sekolah Anak SD,Perlengkapan Bayi & Anak,108386,352,Makassar
+PRD0044,Sepatu Anak Velcro,Perlengkapan Bayi & Anak,90642,145,Palembang
+PRD0045,Buku Mewarnai + Crayon,Perlengkapan Bayi & Anak,30144,353,Semarang
+PRD0046,Botol Susu Anti-Kolik,Perlengkapan Bayi & Anak,94964,171,Surabaya
+PRD0047,Kaos Olahraga Dryfit,Olahraga & Outdoor,75610,244,Bogor
+PRD0048,Tali Skipping Premium,Olahraga & Outdoor,53448,61,Surabaya
+PRD0049,Matras Yoga 6mm,Olahraga & Outdoor,152938,269,Semarang
+PRD0050,Botol Infuser Air,Olahraga & Outdoor,59340,487,Makassar
+PRD0051,Topi Running,Olahraga & Outdoor,47254,460,Medan
+PRD0052,Gelang Batok Kelapa,Kerajinan & Souvenir,24054,155,Bandung
+PRD0053,Tas Anyaman Pandan,Kerajinan & Souvenir,93716,436,Depok
+PRD0054,Lukisan Kanvas UMKM,Kerajinan & Souvenir,184651,323,Depok
+PRD0055,Gantungan Kunci Batik,Kerajinan & Souvenir,12128,351,Depok
+PRD0056,Topeng Kayu Dekorasi,Kerajinan & Souvenir,104620,487,Surabaya

@@ -1,0 +1,73 @@
+tahun,kuartal,category,total_order,total_qty,total_revenue,avg_order_value
+2023,1,Fashion & Pakaian,35,81.0,13731895.0,392340.0
+2023,1,Makanan & Minuman,57,132.0,9589300.0,168233.0
+2023,1,Kerajinan & Souvenir,40,93.0,9289810.0,232245.0
+2023,1,Elektronik & Aksesori,40,92.0,8500035.0,212501.0
+2023,1,Rumah Tangga,47,117.0,8174015.0,173915.0
+2023,1,Perlengkapan Bayi & Anak,33,69.0,6263600.0,189806.0
+2023,1,Kecantikan & Perawatan,45,99.0,4894390.0,108764.0
+2023,1,Olahraga & Outdoor,29,77.0,4862015.0,167656.0
+2023,2,Fashion & Pakaian,43,96.0,17345710.0,403389.0
+2023,2,Elektronik & Aksesori,44,119.0,9601805.0,218223.0
+2023,2,Olahraga & Outdoor,34,99.0,8575385.0,252217.0
+2023,2,Makanan & Minuman,60,132.0,8259950.0,137666.0
+2023,2,Kecantikan & Perawatan,51,141.0,7649155.0,149983.0
+2023,2,Perlengkapan Bayi & Anak,35,73.0,6604185.0,188691.0
+2023,2,Rumah Tangga,43,91.0,5217700.0,121342.0
+2023,2,Kerajinan & Souvenir,23,49.0,2639965.0,114781.0
+2023,3,Fashion & Pakaian,50,120.0,20444860.0,408897.0
+2023,3,Elektronik & Aksesori,37,95.0,9806060.0,265029.0
+2023,3,Makanan & Minuman,44,110.0,8405485.0,191034.0
+2023,3,Perlengkapan Bayi & Anak,27,82.0,7504525.0,277945.0
+2023,3,Rumah Tangga,55,151.0,7365515.0,133918.0
+2023,3,Kerajinan & Souvenir,36,96.0,6178110.0,171614.0
+2023,3,Olahraga & Outdoor,28,77.0,5610995.0,200393.0
+2023,3,Kecantikan & Perawatan,38,81.0,4540090.0,119476.0
+2023,4,Fashion & Pakaian,49,112.0,18642765.0,380465.0
+2023,4,Makanan & Minuman,54,138.0,8237690.0,152550.0
+2023,4,Kerajinan & Souvenir,41,94.0,8154975.0,198902.0
+2023,4,Elektronik & Aksesori,35,90.0,7897650.0,225647.0
+2023,4,Rumah Tangga,65,150.0,7560375.0,116313.0
+2023,4,Kecantikan & Perawatan,52,126.0,7516785.0,144554.0
+2023,4,Perlengkapan Bayi & Anak,28,63.0,5094945.0,181962.0
+2023,4,Olahraga & Outdoor,14,32.0,2207575.0,157684.0
+2024,1,Fashion & Pakaian,44,106.0,19009405.0,432032.0
+2024,1,Makanan & Minuman,54,134.0,10246780.0,189755.0
+2024,1,Perlengkapan Bayi & Anak,36,98.0,8310760.0,230854.0
+2024,1,Kecantikan & Perawatan,49,129.0,8239825.0,168160.0
+2024,1,Elektronik & Aksesori,47,101.0,6572940.0,139850.0
+2024,1,Kerajinan & Souvenir,26,65.0,5978295.0,229934.0
+2024,1,Rumah Tangga,44,85.0,4324320.0,98280.0
+2024,1,Olahraga & Outdoor,23,57.0,3764300.0,163665.0
+2024,2,Fashion & Pakaian,48,113.0,18247410.0,380154.0
+2024,2,Makanan & Minuman,44,101.0,7980455.0,181374.0
+2024,2,Perlengkapan Bayi & Anak,43,92.0,7702785.0,179135.0
+2024,2,Kerajinan & Souvenir,31,69.0,7522925.0,242675.0
+2024,2,Kecantikan & Perawatan,55,111.0,7205095.0,131002.0
+2024,2,Olahraga & Outdoor,38,90.0,6248895.0,164445.0
+2024,2,Rumah Tangga,41,108.0,6211975.0,151512.0
+2024,2,Elektronik & Aksesori,38,80.0,5535270.0,145665.0
+2024,3,Fashion & Pakaian,40,102.0,14152945.0,353824.0
+2024,3,Perlengkapan Bayi & Anak,42,108.0,9774480.0,232726.0
+2024,3,Elektronik & Aksesori,41,102.0,9066905.0,221144.0
+2024,3,Kecantikan & Perawatan,52,124.0,8231040.0,158289.0
+2024,3,Kerajinan & Souvenir,39,83.0,6649830.0,170508.0
+2024,3,Olahraga & Outdoor,31,92.0,6596935.0,212804.0
+2024,3,Rumah Tangga,46,106.0,5139445.0,111727.0
+2024,3,Makanan & Minuman,38,79.0,3999080.0,105239.0
+2024,4,Fashion & Pakaian,50,124.0,21635345.0,432707.0
+2024,4,Elektronik & Aksesori,45,119.0,9664210.0,214760.0
+2024,4,Kerajinan & Souvenir,34,78.0,8659320.0,254686.0
+2024,4,Makanan & Minuman,48,113.0,7678670.0,159972.0
+2024,4,Perlengkapan Bayi & Anak,37,85.0,7616935.0,205863.0
+2024,4,Rumah Tangga,47,115.0,6719860.0,142976.0
+2024,4,Kecantikan & Perawatan,36,79.0,5155215.0,143200.0
+2024,4,Olahraga & Outdoor,25,52.0,3690825.0,147633.0
+,,Fashion & Pakaian,10,42.0,8521315.0,852132.0
+,,Elektronik & Aksesori,18,48.0,4802625.0,266813.0
+,,Makanan & Minuman,16,34.0,2255980.0,140999.0
+,,Kecantikan & Perawatan,8,28.0,1687275.0,210909.0
+,,Rumah Tangga,10,27.0,1633630.0,163363.0
+,,Perlengkapan Bayi & Anak,9,19.0,1529920.0,169991.0
+,,Olahraga & Outdoor,4,14.0,914155.0,228539.0
+,,Kerajinan & Souvenir,3,4.0,318690.0,106230.0
