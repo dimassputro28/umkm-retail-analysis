@@ -1,63 +1,190 @@
-# Dataset: Transaksi Retail UMKM Indonesia
-**Proyek 1B — Portofolio Data Analyst**
+# Analisis Transaksi Retail UMKM Indonesia
+### End-to-End Data Analysis | SQL · Python · Matplotlib
 
-## Konteks Bisnis
-Dataset ini merepresentasikan jaringan UMKM retail multi-kategori yang beroperasi
-di 10 kota besar Indonesia selama periode Januari 2023 – Desember 2024.
+---
 
-## File Structure
-| File | Rows | Keterangan |
-|------|------|------------|
-| `transactions_raw.csv` | 5,610 | Data mentah **dengan dirty data** — gunakan ini untuk analisis |
-| `transactions_clean_reference.csv` | 5,500 | Referensi data bersih (jangan dibuka sebelum selesai cleaning) |
-| `products.csv` | 56 | Katalog produk per kategori |
-| `customers.csv` | 1,000 | Profil pelanggan |
-| `stores.csv` | 50 | Data toko UMKM per kota |
+## Latar Belakang & Problem Statement
 
-## Kolom Utama (transactions_raw.csv)
-| Kolom | Tipe | Keterangan |
-|-------|------|------------|
-| order_id | string | ID unik transaksi |
-| order_date | string | Tanggal order (ada 4 format berbeda — dirty!) |
-| customer_id | string | FK ke customers.csv |
-| store_id | string | FK ke stores.csv |
-| product_id | string | FK ke products.csv |
-| category | string | Kategori produk (ada inkonsistensi casing — dirty!) |
-| qty | int | Kuantitas (ada nilai negatif — dirty!) |
-| unit_price | float | Harga satuan (ada outlier 10x — dirty!) |
-| discount_pct | float | Persentase diskon (ada missing value — dirty!) |
-| total_price | float | Total setelah diskon |
-| payment_method | string | 12 metode pembayaran lokal (ada missing & casing issues) |
-| order_status | string | delivered / cancelled / returned / processing |
-| city | string | Kota toko (ada missing value — dirty!) |
+Jaringan UMKM retail multi-kategori yang beroperasi di 10 kota besar Indonesia
+menghadapi tantangan dalam mengoptimalkan strategi penjualan dan mengurangi
+risiko operasional. Sebagai Data Analyst, proyek ini menjawab lima pertanyaan bisnis:
 
-## Kategori Produk (8 kategori)
-- Fashion & Pakaian
-- Makanan & Minuman
-- Kecantikan & Perawatan
-- Elektronik & Aksesori
-- Rumah Tangga
-- Perlengkapan Bayi & Anak
-- Olahraga & Outdoor
-- Kerajinan & Souvenir
+1. **Kategori produk** mana yang paling berkontribusi terhadap revenue dan bagaimana tren per kuartal?
+2. **Metode pembayaran** digital mana yang dominan dan apakah berbeda antar kota?
+3. **Toko** mana yang menjadi top performer dan apa karakteristiknya?
+4. Apakah **diskon** yang lebih besar benar-benar meningkatkan volume transaksi?
+5. **Kategori** mana yang paling berisiko dari sisi cancellation & return?
 
-## Metode Pembayaran Lokal (12)
-GoPay, OVO, Dana, ShopeePay, LinkAja, Transfer BCA, Transfer BRI,
-Transfer Mandiri, COD, QRIS, Indomaret, Alfamart
+---
 
-## Dirty Data yang Diinjeksi (untuk latihan cleaning)
-| Tipe | Kolom | Estimasi |
-|------|-------|----------|
-| Missing values | payment_method, discount_pct, city | ~2-5% |
-| Duplicate rows | — | ~2% (110 rows) |
-| Format tanggal tidak konsisten | order_date | ~3% |
-| Inkonsistensi casing | category, payment_method | ~2% |
-| Outlier harga | unit_price | ~1% (10x lipat) |
-| Nilai qty negatif | qty | ~0.5% |
+## Dataset
 
-## Pertanyaan Bisnis (Problem Statement)
-1. Kategori produk mana yang paling berkontribusi terhadap revenue dan bagaimana trennya per kuartal?
-2. Metode pembayaran digital mana yang paling dominan dan adakah perbedaan preferensi antar kota?
-3. Toko mana yang memiliki performa terbaik dan apa karakteristiknya?
-4. Bagaimana pola diskon mempengaruhi volume transaksi?
-5. Berapa tingkat cancellation & return per kategori dan apa implikasinya?
+| File | Baris | Deskripsi |
+|------|------:|-----------|
+| `transactions_raw.csv` | 5,610 | Data mentah dengan 7 tipe dirty data |
+| `transactions_clean.csv` | ~5,300 | Hasil setelah data cleaning |
+| `products.csv` | 56 | Katalog produk (8 kategori) |
+| `customers.csv` | 1,000 | Profil pelanggan (10 kota) |
+| `stores.csv` | 50 | Data toko UMKM |
+
+**Periode:** Januari 2023 – Desember 2024  
+**Sumber:** Synthetic dataset berbasis konteks pasar retail Indonesia
+
+### Dirty Data yang Diinjeksi (untuk latihan cleaning)
+- Missing values pada `payment_method`, `discount_pct`, `city`
+- Duplicate rows (~2%)
+- Format tanggal tidak konsisten (4 format berbeda)
+- Inkonsistensi casing pada `category` dan `payment_method`
+- Outlier harga (~10x lipat dari nilai normal)
+- Nilai `qty` negatif (data entry error)
+
+---
+
+## Metodologi & Pipeline
+
+```
+Raw Data
+   │
+   ▼
+[Step 1] Data Cleaning (Python/Pandas)
+   │  • Drop duplicates
+   │  • Standardisasi format tanggal
+   │  • Fix inkonsistensi teks (category, payment_method)
+   │  • Handle missing values dengan business logic
+   │  • Remove outlier harga (IQR per kategori)
+   │
+   ▼
+[Step 2] SQL Analysis (DuckDB)
+   │  • Revenue per kategori per kuartal
+   │  • Dominasi metode pembayaran per kota
+   │  • Store performance (CTE + Window Function)
+   │  • Pengaruh diskon terhadap volume
+   │  • Cancellation & return rate per kategori
+   │
+   ▼
+[Step 3] Visualisasi & Storytelling (Matplotlib)
+   │  • Line chart tren revenue
+   │  • Grouped bar chart metode pembayaran
+   │  • Quadrant analysis performa toko
+   │  • Dual-axis chart dampak diskon
+   │  • Horizontal bar chart risiko operasional
+   │
+   ▼
+Business Insight & Rekomendasi
+```
+
+---
+
+## Key Findings
+
+### 1. Revenue & Kategori
+- **Total transaksi delivered:** 2,624 order | **Total revenue:** Rp533,899,790
+- **Fashion & Pakaian** mendominasi dengan revenue **Rp143,210,335** (26.8% dari total)
+- 8 kategori produk aktif dengan distribusi revenue yang relatif merata di luar Fashion
+
+### 2. Metode Pembayaran
+- **Indomaret** menjadi metode terpopuler dengan **228 transaksi**
+- Pembayaran berbasis minimarket (Indomaret & Alfamart) mendominasi — mengindikasikan segmen pelanggan yang belum sepenuhnya beralih ke dompet digital
+- Potensi pertumbuhan besar untuk GoPay, OVO, dan QRIS melalui edukasi & promo
+
+### 3. Performa Toko
+- **20 toko aktif** teridentifikasi dalam analisis top performer
+- **Toko Makmur Semarang** menjadi top store dengan revenue **Rp18,205,930**
+- Quadrant analysis mengidentifikasi toko STARS (high volume + high value) sebagai benchmark replikasi strategi
+
+### 4. Strategi Diskon
+- Transaksi **tanpa diskon (0%)** mencatat volume tertinggi
+- Temuan ini mengindikasikan bahwa pelanggan UMKM ini tidak bergantung pada diskon — kualitas produk & kepercayaan merek lebih berpengaruh
+- Diskon agresif tidak perlu diprioritaskan; margin dapat dipertahankan
+
+### 5. Risiko Operasional
+- **Fashion & Pakaian** memiliki cancel rate tertinggi sebesar **17.5%** — melampaui threshold 15%
+- Kemungkinan penyebab: ekspektasi produk tidak sesuai (ukuran, warna), perlu perbaikan foto produk & size guide
+- Kategori lain berada di bawah threshold 15% — relatif aman
+
+---
+
+## Rekomendasi Bisnis
+
+| Prioritas | Aksi | Target Kategori |
+|-----------|------|-----------------|
+| 🔴 HIGH | Audit deskripsi produk & size guide untuk turunkan cancel rate dari 17.5% ke <12% | Fashion & Pakaian |
+| 🔴 HIGH | Skalakan stok & variasi produk sebagai kategori revenue driver utama | Fashion & Pakaian |
+| 🟡 MEDIUM | Kampanye edukasi dompet digital (GoPay, OVO, QRIS) untuk geser dari COD/minimarket | Semua kota |
+| 🟡 MEDIUM | Replikasi strategi Toko Makmur Semarang ke toko performa rendah (quadrant "Needs Attention") | Store Management |
+| 🟢 LOW | Pertahankan kebijakan harga tanpa diskon agresif — fokus pada value & kualitas | Semua kategori |
+
+---
+
+## Visualisasi
+
+| Chart | Insight |
+|-------|---------|
+| ![Revenue Trend](outputs/charts/01_revenue_trend.png) | Tren revenue per kategori Q1 2023 – Q4 2024 |
+| ![Payment Method](outputs/charts/02_payment_by_city.png) | Dominasi metode pembayaran per kota |
+| ![Store Quadrant](outputs/charts/03_store_quadrant.png) | Segmentasi performa toko (4 kuadran) |
+| ![Discount Impact](outputs/charts/04_discount_impact.png) | Pengaruh level diskon terhadap volume & nilai |
+| ![Cancel Return](outputs/charts/05_cancel_return_rate.png) | Risiko operasional per kategori |
+
+---
+
+## Tech Stack
+
+| Tools | Kegunaan |
+|-------|----------|
+| Python 3.x | Data cleaning & visualisasi |
+| Pandas | Manipulasi & transformasi data |
+| Matplotlib | Visualisasi & storytelling |
+| DuckDB | SQL analysis (in-process, tanpa server) |
+| Jupyter Notebook | Interactive development |
+| VS Code | IDE |
+| Git & GitHub | Version control & portofolio |
+
+---
+
+## Struktur Repository
+
+```
+umkm-retail-analysis/
+├── data/
+│   ├── raw/                  ← Dataset original
+│   └── processed/            ← Hasil cleaning & query
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_sql_analysis.ipynb
+│   └── 03_visualization.ipynb
+├── outputs/
+│   └── charts/               ← Semua chart PNG
+├── umkm_retail.duckdb        ← Database lokal
+└── README.md
+```
+
+---
+
+## Cara Menjalankan
+
+```bash
+# 1. Clone repository
+git clone https://github.com/username/umkm-retail-analysis.git
+cd umkm-retail-analysis
+
+# 2. Install dependencies
+pip install pandas matplotlib numpy duckdb jupyter
+
+# 3. Jalankan notebook secara berurutan
+jupyter notebook notebooks/01_data_cleaning.ipynb
+jupyter notebook notebooks/02_sql_analysis.ipynb
+jupyter notebook notebooks/03_visualization.ipynb
+```
+
+---
+
+## Tentang Proyek
+
+Proyek ini merupakan bagian dari portofolio Data Analyst dengan fokus pada
+analisis bisnis end-to-end — mulai dari data mentah hingga rekomendasi strategis
+yang dapat ditindaklanjuti oleh manajemen bisnis.
+
+**Author:** [Nama Anda]  
+**LinkedIn:** [LinkedIn URL]  
+**Email:** [Email Anda]
