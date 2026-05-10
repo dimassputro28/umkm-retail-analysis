@@ -158,33 +158,3 @@ umkm-retail-analysis/
 ├── umkm_retail.duckdb        ← Database lokal
 └── README.md
 ```
-
----
-
-## Cara Menjalankan
-
-```bash
-# 1. Clone repository
-git clone https://github.com/username/umkm-retail-analysis.git
-cd umkm-retail-analysis
-
-# 2. Install dependencies
-pip install pandas matplotlib numpy duckdb jupyter
-
-# 3. Jalankan notebook secara berurutan
-jupyter notebook notebooks/01_data_cleaning.ipynb
-jupyter notebook notebooks/02_sql_analysis.ipynb
-jupyter notebook notebooks/03_visualization.ipynb
-```
-
----
-
-## Tentang Proyek
-
-Proyek ini merupakan bagian dari portofolio Data Analyst dengan fokus pada
-analisis bisnis end-to-end — mulai dari data mentah hingga rekomendasi strategis
-yang dapat ditindaklanjuti oleh manajemen bisnis.
-
-**Author:** [Nama Anda]  
-**LinkedIn:** [LinkedIn URL]  
-**Email:** [Email Anda]
